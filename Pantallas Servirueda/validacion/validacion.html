@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validación - ServiRueda</title>
+    <link rel="stylesheet" href="validacion.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="back">&#10094;</div> 
+        
+        <img src="../logo sr.png" alt="Logo ServiRueda" class="logo">
+        
+        <h1 class="titulo">Validación.</h1>
+
+        <form class="formulario" action="procesar_validacion.php" method="POST" enctype="multipart/form-data">
+            
+            <div class="grupo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            
+            <div class="grupo">
+                <label for="apellido_p">Apellido Paterno:</label>
+                <input type="text" id="apellido_p" name="apellido_p" required>
+            </div>
+            
+            <div class="grupo">
+                <label for="apellido_m">Apellido Materno:</label>
+                <input type="text" id="apellido_m" name="apellido_m" required>
+            </div>
+
+            <div class="grupo">
+                <label for="celular">Número de Celular:</label>
+                <input type="tel" id="celular" name="celular" required>
+            </div>
+
+            <div class="grupo">
+                <label for="fecha_nac">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha_nac" name="fecha_nac" required>
+            </div>
+
+            <div class="grupo">
+                <label for="foto_perfil">Sube una Foto:</label>
+                <input type="file" id="foto_perfil" name="foto_perfil" class="input-archivo" accept="image/*">
+            </div>
+
+            <div class="grupo">
+                <label for="foto_ine">Foto de Identificación:</label>
+                <input type="file" id="foto_ine" name="foto_ine" class="input-archivo" accept="image/*">
+            </div>
+
+            <div class="grupo">
+                <label for="marca_modelo">Marca y modelo del vehículo:</label>
+                <input type="text" id="marca_modelo" name="marca_modelo" required>
+            </div>
+
+            <div class="grupo">
+                <label for="foto_vehiculo">Foto del vehículo:</label>
+                <input type="file" id="foto_vehiculo" name="foto_vehiculo" class="input-archivo" accept="image/*">
+            </div>
+
+            <button type="submit" class="btn">Terminar Registro</button>
+        </form>
+    </div>
+</body>
+</html>

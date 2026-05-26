@@ -1,0 +1,88 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../fondo sr.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+.contenedor {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+.back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.logo {
+    max-width: 250px;
+    margin-top: 20px;
+}
+
+.titulo {
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #000;
+}
+
+.formulario {
+    margin-top: 40px;
+    width: 60%;
+}
+
+.grupo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.grupo label {
+    width: 200px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.grupo input {
+    flex: 1;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: #d9d9d9;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+}
+
+.btn {
+    margin-top: 40px;
+    padding: 15px 50px;
+    font-size: 22px;
+    border: none;
+    border-radius: 8px;
+    background-color: #38b2ac;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn:hover {
+    background-color: #2c9c96;
+}

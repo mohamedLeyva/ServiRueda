@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - ServiRueda</title>
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+    <div class="contenedor">
+
+         <a href="../inicio/inicio.html" class="back">
+            &#10094;
+        </a>
+        
+        <img src="../logo sr.png" alt="Logo ServiRueda" class="logo">
+        
+        <h1 class="titulo">Registro</h1>
+
+        <form class="formulario" action="procesar_registro.php" method="POST" enctype="multipart/form-data">
+            <div class="grupo">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+            
+            <div class="grupo">
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            
+            <div class="grupo">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+            </div>
+
+            <div class="grupo grupo-roles">
+                <span class="etiqueta-grupo">Selecciona tu Rol: </span>
+                <div class="roles-container">
+                    <label class="tarjeta-rol">
+                        <img src="cliente.png" alt="Cliente" class="icono-rol">
+                        <span>Cliente</span>
+                        <input type="radio" name="rol" value="cliente" required>
+                    </label>
+                    <label class="tarjeta-rol">
+                        <img src="repartidor.png" alt="Mandadito" class="icono-rol">
+                        <span>Mandadito</span>
+                        <input type="radio" name="rol" value="mandadito">
+                    </label>
+                </div>
+            </div>
+
+            <div class="grupo">
+                <label for="foto">Selecciona una Foto:</label>
+                <input type="file" id="foto" name="foto" class="input-file" accept="image/*" required>
+            </div>
+
+            <button type="submit" class="btn">Siguiente</button>
+        </form>
+    </div>
+</body>
+</html>

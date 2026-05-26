@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../fondo\ sr.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.dashboard-contenedor { display: flex; height: 100vh; width: 100%; }
+
+/* --- BARRA LATERAL (Idéntica a la de Inicio) --- */
+.sidebar { width: 260px; background-color: #bce3ef; border-right: 2px solid #2b4c5e; border-radius: 0 30px 30px 0; display: flex; flex-direction: column; padding: 30px 0; box-shadow: 4px 0 15px rgba(0,0,0,0.1); }
+.logo-container { text-align: center; margin-bottom: 40px; }
+.logo { max-width: 180px; }
+.menu-lateral { flex-grow: 1; display: flex; flex-direction: column; padding-left: 20px; }
+.menu-lateral a { text-decoration: none; color: #000; font-size: 18px; font-weight: 600; padding: 15px 20px; margin-bottom: 10px; display: flex; align-items: center; gap: 15px; border-radius: 20px 0 0 20px; transition: background 0.2s; }
+.menu-lateral a:hover, .menu-lateral a.activo { background-color: rgba(0,0,0,0.05); }
+.menu-lateral a.activo { color: #0056b3; }
+.logout-container { padding-left: 20px; }
+.btn-logout { text-decoration: none; color: #d9534f; font-size: 18px; font-weight: 600; display: flex; align-items: center; gap: 15px; padding: 15px 20px; }
+
+/* --- CONTENIDO PRINCIPAL --- */
+.contenido { flex-grow: 1; padding: 40px 60px; overflow-y: auto; display: flex; flex-direction: column; align-items: center; }
+.header-centro { text-align: center; margin-bottom: 40px; }
+
+/* --- TARJETA DE COMPARTIR --- */
+.tarjeta-compartir {
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 30px;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+
+.qr-container { margin-bottom: 30px; }
+.qr-container img {
+    border: 4px solid #000;
+    border-radius: 15px;
+    padding: 10px;
+    background: #fff;
+    margin-bottom: 10px;
+}
+.qr-container p { font-weight: 600; color: #666; font-size: 15px; }
+
+.link-container {
+    display: flex;
+    background: #f4f2f0;
+    border: 2px solid #000;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+.link-container input {
+    flex-grow: 1;
+    border: none;
+    padding: 15px;
+    font-family: 'Poppins', sans-serif;
+    color: #555;
+    background: transparent;
+    outline: none;
+}
+.btn-copiar {
+    background: #3498db;
+    color: white;
+    border: none;
+    border-left: 2px solid #000;
+    padding: 0 20px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.2s;
+}
+.btn-copiar:hover { background: #2980b9; }
+
+.btn-whatsapp {
+    display: block;
+    background-color: #25D366;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    border: 2px solid #000;
+    transition: transform 0.1s;
+}
+.btn-whatsapp:hover { background-color: #20bd5a; transform: scale(0.98); }
+
+.mensaje-oculto {
+    display: none;
+    color: #28a745;
+    font-weight: 600;
+    margin-top: 15px;
+}

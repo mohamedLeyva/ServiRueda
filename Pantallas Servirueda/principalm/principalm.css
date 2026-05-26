@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../fondo\ sr.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.dashboard-contenedor { display: flex; height: 100vh; width: 100%; }
+
+.sidebar {
+    width: 260px;
+    background-color: #bce3ef;
+    border-right: 2px solid #2b4c5e;
+    border-radius: 0 30px 30px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    box-shadow: 4px 0 15px rgba(0,0,0,0.1);
+}
+.logo-container { text-align: center; margin-bottom: 40px; }
+.logo { max-width: 180px; }
+.menu-lateral { flex-grow: 1; display: flex; flex-direction: column; padding-left: 20px; }
+.menu-lateral a {
+    text-decoration: none; color: #000; font-size: 18px; font-weight: 600;
+    padding: 15px 20px; margin-bottom: 10px; display: flex; align-items: center;
+    gap: 15px; border-radius: 20px 0 0 20px; transition: background 0.2s;
+}
+.menu-lateral a:hover, .menu-lateral a.activo { background-color: rgba(0,0,0,0.05); }
+.menu-lateral a.activo { color: #0056b3; }
+.logout-container { padding-left: 20px; }
+.btn-logout {
+    text-decoration: none; color: #d9534f; font-size: 18px; font-weight: 600;
+    display: flex; align-items: center; gap: 15px; padding: 15px 20px;
+}
+
+.contenido { flex-grow: 1; padding: 40px 60px; overflow-y: auto; }
+
+.header-principal { position: relative; margin-bottom: 40px; width: 100%; }
+
+.foto-top-right {
+    position: absolute; top: 0; right: 0; width: 60px; height: 60px;
+    border-radius: 50%; overflow: hidden; border: 2px solid #000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); background-color: #fff;
+}
+.foto-top-right img { width: 100%; height: 100%; object-fit: cover; }
+
+.header-centro {
+    display: flex; flex-direction: column; align-items: center; 
+    text-align: center; width: 100%; padding-top: 10px;
+}
+.header-centro h1 { font-size: 35px; font-weight: 700; margin-bottom: 15px; color: #111; }
+
+.estado-repartidor {
+    display: flex; align-items: center; gap: 15px; background: rgba(255,255,255,0.8);
+    padding: 10px 20px; border-radius: 30px; border: 2px solid #000; font-weight: 600;
+}
+
+.toggle-estado {
+    padding: 8px 20px; border-radius: 20px; font-size: 14px; 
+    display: flex; align-items: center; gap: 8px; cursor: pointer;
+    color: white; font-weight: bold; transition: background-color 0.3s;
+}
+
+.toggle-estado.activo {
+    background-color: #28a745; 
+}
+
+.toggle-estado.inactivo {
+    background-color: #dc3545; 
+}

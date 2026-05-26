@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../fondo\ sr.png"); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.contenedor-perfil {
+    background: transparent;
+    box-shadow: none;
+    width: 90%;
+    max-width: 500px;
+    padding: 0 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: auto; 
+}
+
+.btn-volver {
+    position: fixed; 
+    top: 30px;       
+    left: 30px;     
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    z-index: 100;   
+}
+
+.header-logo { 
+    text-align: center; 
+    margin-bottom: 15px; 
+    margin-top: 30px;
+}
+
+.logo { 
+    width: 220px; 
+    max-width: 100%;
+}
+
+.titulo-perfil {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #000;
+    font-weight: 700;
+}
+
+.mensaje-exito {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.formulario-edicion { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+.seccion-foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.foto-actual {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: none; 
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+}
+
+.btn-subir-foto {
+    background-color: transparent;
+    color: #000;
+    padding: 8px 25px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid #000; 
+    transition: background 0.2s;
+}
+
+.btn-subir-foto:hover { 
+    background-color: rgba(0,0,0,0.05); 
+}
+
+.grupo-input label {
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.grupo-input input {
+    width: 100%;
+    padding: 14px 15px;
+    background-color: #fff; 
+    border: 2px solid #000; 
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    outline: none;
+    color: #000;
+}
+
+.grupo-input input:focus { 
+    border-color: #3498db; 
+}
+
+.btn-guardar {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s, transform 0.1s;
+    text-transform: uppercase; 
+}
+
+.btn-guardar:hover { 
+    background-color: #2980b9; 
+}
+
+.btn-guardar:active {
+    transform: scale(0.98);
+}

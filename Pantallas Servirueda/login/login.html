@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesión - ServiRueda</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+<div class="contenedor">
+
+     <a href="../inicio/inicio.html" class="back">
+        &#10094;
+    </a>
+
+    <div class="header">
+        <img src="../logo sr.png" alt="Logo" class="logo">
+    </div>
+
+    <h1 class="titulo">Inicia Sesión</h1>
+
+    <form class="formulario" action="procesar_login.php" method="POST">
+
+        <div class="grupo">
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+        </div>
+
+        <div class="grupo">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="contrasena" required>
+        </div>
+
+        <button type="submit" class="btn">Iniciar Sesión</button>
+
+    </form>
+</div>
+
+</body>
+</html>

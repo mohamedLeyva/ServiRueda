@@ -1,0 +1,103 @@
+/* FUENTE */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* 👈 nueva fuente */
+    background-image: url("../fondo sr.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.contenedor {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-width: 260px;
+    height: auto;
+}
+
+.lado-derecho {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.mapa {
+    width: 460px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.lista {
+    list-style: none;
+    padding: 0;
+}
+
+.lista li {
+    margin: 12px 0;
+    font-size: 18px;
+    color: #2d3748;
+    font-weight: 400;
+}
+
+.contenido {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding-right: 500px;
+}
+
+.izquierda {
+    width: 50%;
+}
+
+.descripcion {
+    font-size: 22px;
+    color: #1a202c;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 15px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+}
+
+
+.login {
+    background-color: #2b6cb0;
+}
+
+
+.registro {
+    background-color: #38b2ac;
+}
