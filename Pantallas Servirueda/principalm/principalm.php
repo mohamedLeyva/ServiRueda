@@ -76,7 +76,7 @@ $icono_estado = ($es_disponible == 1) ? 'fa-check-circle' : 'fa-times-circle';
                 </div>
                 
                 <div class="header-centro">
-                    <h1>¡A rodar, "<?php echo htmlspecialchars($nombre_usuario); ?>"!</h1>
+                    <h1>¡Prepárate , <?php echo htmlspecialchars($nombre_usuario); ?>!</h1>
                     
                     <div class="estado-repartidor">
                         <span>Mi Estado Actual:</span>

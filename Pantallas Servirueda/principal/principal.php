@@ -68,7 +68,7 @@ $resultado = $conexion->query($sql);
                 </div>
                 
                 <div class="header-centro">
-                    <h1>Bienvenido, "<?php echo htmlspecialchars($nombre_usuario); ?>"</h1>
+                    <h1>Bienvenido, <?php echo htmlspecialchars($nombre_usuario); ?></h1>
                     
                     <div class="buscador">
                         <input type="text" id="buscadorInput" placeholder="Buscar mandadito o zona (ej. Centro)">

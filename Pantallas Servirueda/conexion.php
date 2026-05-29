@@ -1,7 +1,7 @@
 <?php
 $servidor = "localhost";
-$usuario_db = "root"; // Por defecto en servidores locales como XAMPP suele ser 'root'
-$password_db = "PilloFon33."; // Por defecto suele estar vacía. Si le pusiste una en Workbench, ponla aquí
+$usuario_db = "root"; 
+$password_db = "Pillofon.3"; 
 $base_datos = "srprueba";
 
 // Crear la conexión
